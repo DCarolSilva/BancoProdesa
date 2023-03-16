@@ -6,9 +6,9 @@ public class app {
          Cuenta c = new Cuenta();
          c.setSaldo(1000d);
 
-         System.out.printf("\nSaldo inicial: C$%.2f", c.getSaldo());
+         System.out.printf("\nSaldo inicial: C$%.2f", c.getSaldo()); 
 
-         boolean running = true;
+         boolean running = false;
          while (running) {
              System.out.println("\n\n==========================Opciones==========================");
              System.out.println("1. Credito moneda local");
@@ -19,28 +19,28 @@ public class app {
 
              switch (leerInt("Digite su opcion", bf)) {
                  case 1:
-                     //OPCION 1 - CREDITO MONEDA LOCAL
+                     //OPCION 1 - Credito moneda local
                      new CreditoCordobas().realizarCreditoCordobas(c, leerDouble("Monto a acreditar en moneda local", bf));
                      break;
                  case 2:
-                     //OPCION 2 - CREDITO DOLAR
+                     //OPCION 2 - Credito dolar
                      System.err.println("\n\n\t*****EN DESARROLLO*****\n\n");
                      break;
                  case 3:
-                     //OPCION 3 - DEBITO MONEDA LOCAL
+                     //OPCION 3 - Debito moneda local
                      new DebitoCordoba().debitoCordoba(c, leerDouble("Monto a debitar moneda local", bf));
                      break;
                  case 4:
-                     //OPCION 4 - DEBITO DOLAR
+                     //OPCION 4 - Debito dolar
                      new debitoDolares().new ConvertidorDeMoneda().debitoDolares(c, leerDouble("Monto a debitar dolares", bf));
                      break;
                  case 5:
                      running = false;
-                     System.out.println("\n\nBye");
+                     System.out.println("\n\nBye... until tomorrow");
                      break;
              }
 
-             System.out.printf("\n\t*** Saldo actual: C$%.2f ***\n", c.getSaldo());
+             System.out.printf("\n\t*** Saldo actual: C$%.4f ***\n", c.getSaldo());
          }
 
 
