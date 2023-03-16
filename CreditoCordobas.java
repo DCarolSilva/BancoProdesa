@@ -5,7 +5,7 @@ public class CreditoCordobas {
             if (saldo == null || saldo <= 0 || saldo < monto){
                 System.out.println("El saldo disponible es insuficiente");
             } else {
-                saldo -= monto;
+                saldo += monto;
                 cuenta.setSaldo(saldo);
                 System.out.println("el saldo de su cuenta es: "+ cuenta.getSaldo());
             }
