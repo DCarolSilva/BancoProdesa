@@ -69,7 +69,7 @@ public class app {
                 System.out.print(mensaje.concat(": "));
                 value = Integer.parseInt(in.readLine());
                 noPass = false;
-            }catch (NumberFormatException | IOException e) {
+            }catch (Exception e) {
                 System.out.println("\n\tEl argumento no es un número");
             }
         }
