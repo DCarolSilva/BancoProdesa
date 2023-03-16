@@ -1,14 +1,14 @@
 public class debitoDolares {
 
-    private class ConvertidorDeMoneda {
+    public class ConvertidorDeMoneda {
 
-        public static void main(String[] args) {
+        public  void main(String[] args) {
             double tasaDeCambio = 36.5;
-            double montoEnDolares = monto;
+            double montoEnDolares = 1;
             double montoEnCordobas = montoEnDolares * tasaDeCambio;
         }
 
-        public void debitoDolares(cuenta cuenta, double montoEnCordobas) {
+        public void debitoDolares(Cuenta cuenta, double montoEnCordobas) {
             double saldoActual = cuenta.getSaldo();
             cuenta.setSaldo(saldoActual - montoEnCordobas);
         }
