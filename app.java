@@ -64,7 +64,7 @@ public class app {
                 value = Integer.parseInt(in.readLine());
                 noPass = false;
             }catch (IOException e) {
-                System.err.println("\n\tEl argumento no es un número");
+                System.err.println("\n\tEl argumento no es un número entero");
             }
         }
         return value;
