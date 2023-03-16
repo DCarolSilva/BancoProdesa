@@ -20,16 +20,19 @@ public class app {
              switch (leerInt("Digite su opcion", bf)) {
                  case 1:
                      //OPCION 1 - CREDITO MONEDA LOCAL
-                     new CreditoCordobas().realizarCreditoCordobas(c, leerDouble("Monto a acreditar", bf));
+                     new CreditoCordobas().realizarCreditoCordobas(c, leerDouble("Monto a acreditar en moneda local", bf));
                      break;
                  case 2:
                      //OPCION 2 - CREDITO DOLAR
+                     System.err.println("\n\n\t*****EN DESARROLLO*****\n\n");
                      break;
                  case 3:
                      //OPCION 3 - DEBITO MONEDA LOCAL
+                     new DebitoCordoba().debitoCordoba(c, leerDouble("Monto a debitar moneda local", bf));
                      break;
                  case 4:
                      //OPCION 4 - DEBITO DOLAR
+                     new debitoDolares().hacerDebitoDolares(c, leerDouble("Monto a debitar dolares", bf));
                      break;
                  case 5:
                      running = false;
