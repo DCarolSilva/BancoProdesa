@@ -32,7 +32,7 @@ public class app {
                      break;
                  case 4:
                      //OPCION 4 - DEBITO DOLAR
-                     new debitoDolares().hacerDebitoDolares(c, leerDouble("Monto a debitar dolares", bf));
+                     new debitoDolares().new ConvertidorDeMoneda().debitoDolares(c, leerDouble("Monto a debitar dolares", bf));
                      break;
                  case 5:
                      running = false;

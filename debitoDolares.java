@@ -1,10 +1,10 @@
 public class debitoDolares {
 
-    private class ConvertidorDeMoneda {
+    public class ConvertidorDeMoneda {
 
-        public static void main(String[] args) {
+        public  void main(String[] args) {
             double tasaDeCambio = 36.5;
-            double montoEnDolares = monto;
+            double montoEnDolares = 1;
             double montoEnCordobas = montoEnDolares * tasaDeCambio;
         }
 
