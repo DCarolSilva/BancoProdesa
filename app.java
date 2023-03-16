@@ -7,7 +7,7 @@ public class app {
          c.setSaldo(1000d);
 
          System.out.printf("\nSaldo inicial: %.2f", c.getSaldo());
-
+/// modificación Danny
          boolean running = true;
          while (running) {
              System.out.print("\n\n==========================Opciones==========================");
@@ -37,10 +37,10 @@ public class app {
              }
          }
 
-
+/// modificación Danny
 
     }
-
+    /// modificación Danny
     private static double leerDouble(String mensaje, BufferedReader in) {
          boolean noPass = true;
          Double value = null;
@@ -69,4 +69,5 @@ public class app {
         }
         return value;
     }
+    /// modificación Danny
 }
