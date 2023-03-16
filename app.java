@@ -3,7 +3,7 @@ import java.io.*;
 public class app {
      public static void main(String[] args) {
          BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-         cuenta c = new cuenta();
+         Cuenta c = new Cuenta();
          c.setSaldo(1000d);
 
          System.out.printf("\nSaldo inicial: C$%.2f", c.getSaldo());

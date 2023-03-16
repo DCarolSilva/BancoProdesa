@@ -1,4 +1,4 @@
-public class cuenta {
+public class Cuenta {
     public Double getSaldo() {
         return saldo;
     }

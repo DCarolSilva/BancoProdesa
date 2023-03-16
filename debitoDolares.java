@@ -8,7 +8,7 @@ public class debitoDolares {
             double montoEnCordobas = montoEnDolares * tasaDeCambio;
         }
 
-        public void debitoDolares(cuenta cuenta, double montoEnCordobas) {
+        public void debitoDolares(Cuenta cuenta, double montoEnCordobas) {
             double saldoActual = cuenta.getSaldo();
             cuenta.setSaldo(saldoActual - montoEnCordobas);
         }
