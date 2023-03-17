@@ -1,6 +1,6 @@
 public class DebitoCordoba {
 
-    public void debitoCordoba(cuenta cuenta, double monto){
+    public void debitoCordoba(Cuenta cuenta, double monto){
         Double saldo = cuenta.getSaldo();
         saldo -= monto; 
         cuenta.setSaldo(saldo);
